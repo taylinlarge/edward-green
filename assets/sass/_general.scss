@@ -1,0 +1,41 @@
+html, body {
+  width: 100%;
+  height: 100%; 
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0; 
+  background: #FFF8F2;
+}
+
+@font-face {
+    font-family: "bryantpro-light";
+    src: url(../fonts/bryantpro-light-webfont.ttf);
+}
+
+@font-face {
+    font-family: "bryantpro-regular";
+    src: url(../fonts/bryantpro-regular-webfont.ttf);
+}
+
+@font-face {
+    font-family: "code-bold";
+    src: url(../fonts/CODE-Bold.otf);
+}
+
+@font-face {
+    font-family: "code-light";
+    src: url(../fonts/CODE-Light.otf);
+}
+
+.hamburger {
+  display: flex;
+  padding: 0;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  background-color: white;
+}
+
+button:focus {outline:0;}

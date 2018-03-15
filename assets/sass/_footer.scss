@@ -1,0 +1,48 @@
+footer {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: #FCE9D7;
+
+	@media screen and (max-width: $tablet-bp) {
+		height: auto;
+		justify-content: center;
+		flex-wrap: wrap;
+		width: auto;
+		padding: 25px;
+	}
+
+	:first-child {
+		margin-left: 20px;
+	}
+
+	a {
+		text-decoration: none;
+		color: black;
+
+	}
+
+	h3 {
+		font-family: "bryantpro-light";
+		font-size: 1rem;
+
+		@media screen and (max-width: $tablet-bp) {
+			font-size: 1.5rem;
+			margin: 0 0 10px 0;
+		}		
+		
+	}
+
+	span {
+		font-family: "bryantpro-light";
+		font-size: 1rem;
+		margin: 0 10px;
+
+		@media screen and (max-width: $tablet-bp) {
+			font-size: 1.5rem;
+			margin-bottom: 10px;
+		}
+	}
+}

@@ -1,0 +1,407 @@
+// .gallery {
+// 	margin-top: 80px;
+// 	display:flex;
+// }
+
+.bespoke-hero {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/bespoke/hero.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	@media screen and (max-width: $tablet-bp) {
+		background-size: cover; 
+		background-position: center;
+	}
+
+	.hero-text {
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	    width: 75%;
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    text-align: center;
+	    color: white;
+
+	    @media screen and (max-width: $tablet-bp) {
+	    	width: auto;
+	    }
+
+	    h1 {
+    	    font-family: "code-bold";
+		    font-size: 5rem;
+		    letter-spacing: 10px;
+		    margin-bottom: 0;
+
+    	    @media screen and (max-width: $tablet-bp) {
+		    	font-size: 3rem;
+		    }
+
+		    &::after {
+	    		position: absolute;
+				display: block;
+				left: 10%;
+				margin-top: 15px;
+	    		content: "";
+	    		width: 80%;
+	    		height: 2px;
+	    		background-color: #FCB543;
+
+			    @media screen and (max-width: $tablet-bp) {
+					// margin-left: 20px;
+					margin-top: 0;
+					// left: 0;
+			    }
+	    	}
+	    }
+
+	    h4 {
+	    	font-family: "code-bold";
+		    font-size: 2rem;
+		    margin-bottom: 0;
+    	    @media screen and (max-width: $tablet-bp) {
+		    	font-size: 1rem;
+		    }
+	    }
+
+	    p {
+	    	font-family: "bryantpro-light";
+		    font-size: 1.2rem;
+		    width: 43%;
+		    text-align: center;
+		    line-height: 25px;
+
+    	    @media screen and (max-width: $tablet-bp) {
+		    	width: auto;
+		    	margin-top: 0;
+		    }
+		}
+
+		.fa {
+		    font-size: 5rem;
+		    color: white;
+		    position: absolute;
+		    bottom: -200px;
+		}
+	}
+}
+
+.galleryFilter {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px 0;
+
+	.filterContainer {
+		display: flex;
+	    width: 100%;
+	    padding-bottom: 50px;
+	    
+		.filter {
+			width: 100%;
+		    height: 100%;
+		    flex-wrap: wrap;
+		    position: relative;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+
+			.filterEntry {
+			    display: flex;
+			    position: relative;
+			    width: 110px;
+			    padding-left: 20px;
+			    margin-bottom: 20px;
+
+				.checkbox {
+					box-sizing:border-box;
+					width:20px;
+					height:20px;
+					border: 1px solid black;
+					margin-right: 5px;
+
+					.checkbox-check {
+						display: none;
+					}
+
+					&.checked {
+						border: 3px solid green;
+
+						.checkbox-check {
+							display: block;
+						}
+					}
+				}
+
+				.filterName {
+					margin:0;
+					font-family: "bryantpro-regular";
+				}
+			}
+		}
+	}
+
+	.gallery {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 100%;
+
+		.gallery-item {
+			position: relative;
+			border: 3px solid black;
+			width: 20%;
+		    padding: 10px;
+		    margin: 10px;
+		    text-align: center;
+		    order: -1;
+		    max-height: 500px;
+
+		    @media (min-width: "766px") and (max-width: "940px"){
+		    	width: 25%;
+		    }
+
+
+		    &.hide {
+		    	display:none;
+
+		    }
+
+		    @media screen and (max-width: $phone-bp) {
+		    	width: 90%;
+		    }
+
+		    .item-image {
+		    	width: 100%;
+
+		    	img {
+		    		height: 100%;
+		    		width: 100%;
+		    	}
+		    }
+
+		    h1 {
+		    	font-family: "code-bold";
+			    @media screen and (max-width: $tablet-bp) {
+			    	font-size: 0.9em;
+			    }
+		    }
+
+		    p {
+		    	font-family: "bryantpro-regular";
+			    @media screen and (max-width: $tablet-bp) {
+			    	font-size: 0.8em;
+			    }
+		    }
+
+		    button {
+		    	padding: 5px 10px;
+			    border: 2px solid black;
+			    background-color: transparent;
+		    }
+			
+		}
+	}
+}
+
+.size {
+	width: 100%;
+
+	@media screen and (max-width: $tablet-bp) {
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+
+	}
+
+	.size-image {
+		background-image: url(../img/bespoke/fit.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 100%;
+		color: white;
+
+				
+
+		.size-text {	
+		    padding: 120px 110px;
+			width: 24%;
+
+			@media screen and (max-width: $tablet-bp) {
+				width: 80%;
+				padding: 10px 0;
+				margin: 0 auto;
+
+			}
+
+			h1 {
+				display: flex;
+				flex-direction: column;
+				font-family: 'code-light';
+				font-size: 4rem;
+
+				@media screen and (max-width: $tablet-bp){
+					font-size: 3rem;
+				}
+
+				span {
+					font-size: 2.5rem;
+				}
+
+				&::after {
+					content: '';
+					background-color: white;
+					width: 100%;
+					height: 2px;
+					position: relative;
+					left: 0;
+				}
+			}
+
+			p {
+				font-family: 'bryantpro-light';
+				text-align: center;
+			}
+
+			h3 {
+				text-align: center;
+				font-family: "bryantpro-regular";
+			}
+
+			.icons{
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				text-align: center;
+
+				.fa {
+					font-size: 2rem;
+				}
+
+				p {
+					font-family: "bryantpro-light";
+				}
+			}
+
+		}
+		
+	}
+
+	.sizes {
+		width: 100%;
+	    display: flex;
+	    justify-content: space-around;
+	    align-items: center;
+		padding: 100px 0;
+
+	    @media screen and (max-width: $tablet-bp) {
+	    	flex-direction: column;
+	    }
+
+	    h4 {
+	    	font-family: "code-bold";
+	    	color: darkgray;
+	    	margin-bottom: 0;
+
+	    	@media screen and (max-width: $tablet-bp){
+	    		margin: 0;
+	    	}
+
+	    }
+
+	    h5 {
+	    	font-family: "bryantpro-light";
+	    	color: lightgray;
+	    	margin-top: 0;
+	    }
+
+	    .length, .width, .arch {
+	    	display: flex;
+	    	flex-direction: column;
+	    	justify-content: center;
+	    	align-items: center;
+
+	    	.image {
+
+	    		img {
+	    			width: 100%;
+	    		}
+	    	}
+
+	    	input {
+	    		width: 20%;
+			    height: 20px;
+			    border: 1px solid darkgray;
+			    text-align: center;
+
+	    	}
+	    }
+
+	    .length {
+
+	    	.image {
+		    	width: 40%;
+	    	}
+	    }
+
+	    .width, .arch {
+	    	.image {
+		    	width: 100%;
+	    	}
+	    }
+
+	    .width {
+	    	@media screen and (max-width: $tablet-bp){
+	    		margin: 50px 0;
+	    	}
+	    }
+
+	    .width, .arch {
+			input {
+				margin-bottom: -40px;
+				@media screen and (max-width: $tablet-bp){
+					margin-bottom: 0;
+				}
+			}
+	    }
+	}
+
+	a {
+	    position: relative;
+	    top: -50px;
+	    right: -80%;
+	    padding: 5px 10px;
+	    border: 2px solid black;
+	    text-decoration: none;
+	    color: black;
+	    font-family: "bryantpro-regular";
+
+	    @media screen and (max-width: $tablet-bp) {
+	    	position: static;
+	    	margin-bottom: 20px;
+
+	    }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
