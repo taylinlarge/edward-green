@@ -1,7 +1,7 @@
 {
-  "name": "circus-starter",
+  "name": "Edward Green",
   "version": "1.1.0",
-  "description": "A good starting point for new Circus students",
+  "description": "A new site for Edward Green shoe co.",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
@@ -18,12 +18,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chrissilich/circus-starter.git"
+    "url": "git+https://github.com/taylinlarge/edward-green"
   },
   "author": "Chris Silich",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chrissilich/circus-starter/issues"
+    "url": "https://github.com/taylinlarge"
   },
-  "homepage": "https://github.com/chrissilich/circus-starter#readme"
+  "homepage": "https://github.com/taylinlarge"
 }
